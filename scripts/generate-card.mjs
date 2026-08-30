@@ -43,6 +43,7 @@ const PALETTE = {
     // can't zoom the 9px sublabels. 4.6:1 rather than 3.29:1.
     faint: "#727C90",
     clear: "#3FBF87",
+    approach: "#E0A33C",
   },
   light: {
     ground: "#F7F5F1",
@@ -53,8 +54,9 @@ const PALETTE = {
     dim: "#5C6470",
     // Same reason — 4.57:1 rather than 2.95:1.
     faint: "#6B7079",
-    // Darkened so it still passes contrast on paper.
+    // Darkened so they still pass contrast on paper.
     clear: "#1F8F5F",
+    approach: "#8A6414",
   },
 };
 
@@ -144,18 +146,21 @@ function buildSvg(theme, data) {
   // The track circuit, same as the site: lit blocks are running systems,
   // the unlit one is a project Riley contributes to but doesn't run.
   const systems = [
-    { name: "RAILFORLESS", lit: true },
-    { name: "WOT REPLAY RECORDER", lit: true },
-    { name: "BORDERLESSMINECRAFT", lit: true },
-    { name: "MUDBLAZOR", lit: false },
+    { name: "RAILFORLESS", aspect: "clear" },
+    { name: "WOT REPLAY RECORDER", aspect: "clear" },
+    { name: "SQUAWK", aspect: "approach" },
+    { name: "BORDERLESSMINECRAFT", aspect: "clear" },
+    { name: "MUDBLAZOR", aspect: "neutral" },
   ];
 
   let cursor = 26;
   const systemMarkup = systems
     .map((s) => {
-      const box = `<rect x="${cursor}" y="${239}" width="7" height="7" fill="${s.lit ? c.clear : "none"}" stroke="${s.lit ? c.clear : c.faint}" stroke-width="1"/>`;
-      const label = `<text x="${cursor + 13}" y="${246}" font-family="${MONO}" font-size="9" letter-spacing="1.2" fill="${s.lit ? c.dim : c.faint}">${esc(s.name)}</text>`;
-      cursor += 13 + s.name.length * 6.1 + 24;
+      // neutral = contributed to, not run by Riley — it stays unlit.
+      const tint = s.aspect === "neutral" ? null : c[s.aspect];
+      const box = `<rect x="${cursor}" y="${239}" width="7" height="7" fill="${tint ?? "none"}" stroke="${tint ?? c.faint}" stroke-width="1"/>`;
+      const label = `<text x="${cursor + 13}" y="${246}" font-family="${MONO}" font-size="9" letter-spacing="1.2" fill="${tint ? c.dim : c.faint}">${esc(s.name)}</text>`;
+      cursor += 13 + s.name.length * 6.1 + 20;
       return box + label;
     })
     .join("");
