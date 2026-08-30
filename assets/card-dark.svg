@@ -1,0 +1,31 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="840" height="268" viewBox="0 0 840 268" role="img" aria-label="Riley Nielsen, software engineer. 300,000+ fare searches served, 1,127 in the last 24 hours, 176 stars on BorderlessMinecraft.">
+  <rect width="840" height="268" fill="#0B0E14"/>
+  <rect x="0.5" y="0.5" width="839" height="267" fill="none" stroke="#242C3D"/>
+
+  <rect x="1" y="1" width="838" height="39" fill="#171D2C"/>
+  <line x1="0" y1="40" x2="840" y2="40" stroke="#242C3D"/>
+  <text x="26" y="25" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="12" font-weight="700" letter-spacing="2.2" fill="#E2E8F2">RILEY NIELSEN</text>
+  <text x="814" y="25" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" letter-spacing="1.5" fill="#727C90">ST PAUL, MN</text>
+
+  <text x="26" y="88" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="21" font-weight="700" letter-spacing="-0.3" fill="#E2E8F2">I build backends and keep them running.</text>
+  <text x="26" y="112" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="10" letter-spacing="1.6" fill="#8593A8">SOFTWARE ENGINEER  ·  BACKEND &amp; INFRASTRUCTURE  ·  .NET / TYPESCRIPT / LINUX</text>
+
+  <line x1="26" y1="138" x2="814" y2="138" stroke="#1B2231"/>
+
+    <text x="26" y="178" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="27" font-weight="700" letter-spacing="-0.5" fill="#E2E8F2">300,000+</text>
+    
+    <text x="26" y="196" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" letter-spacing="1.3" fill="#8593A8">FARE SEARCHES SERVED</text>
+    <text x="26" y="210" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1.1" fill="#727C90">SINCE SEP 2024</text>
+    <text x="300" y="178" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="27" font-weight="700" letter-spacing="-0.5" fill="#E2E8F2">1,127</text>
+    <circle cx="304" cy="193" r="3" fill="#3FBF87"/>
+    <text x="314" y="196" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" letter-spacing="1.3" fill="#8593A8">IN THE LAST 24 HOURS</text>
+    <text x="300" y="210" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1.1" fill="#727C90">RAILFORLESS.US</text>
+    <text x="566" y="178" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="27" font-weight="700" letter-spacing="-0.5" fill="#E2E8F2">176</text>
+    
+    <text x="566" y="196" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9.5" letter-spacing="1.3" fill="#8593A8">STARS ON MY OWN WORK</text>
+    <text x="566" y="210" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1.1" fill="#727C90">BORDERLESSMINECRAFT</text>
+
+  <line x1="26" y1="224" x2="814" y2="224" stroke="#1B2231"/>
+<rect x="26" y="239" width="7" height="7" fill="#3FBF87" stroke="#3FBF87" stroke-width="1"/><text x="39" y="246" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1.2" fill="#8593A8">RAILFORLESS</text><rect x="130.1" y="239" width="7" height="7" fill="#3FBF87" stroke="#3FBF87" stroke-width="1"/><text x="143.1" y="246" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1.2" fill="#8593A8">WOT REPLAY RECORDER</text><rect x="283" y="239" width="7" height="7" fill="#3FBF87" stroke="#3FBF87" stroke-width="1"/><text x="296" y="246" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1.2" fill="#8593A8">BORDERLESSMINECRAFT</text><rect x="435.9" y="239" width="7" height="7" fill="none" stroke="#727C90" stroke-width="1"/><text x="448.9" y="246" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1.2" fill="#727C90">MUDBLAZOR</text>
+  <text x="814" y="246" text-anchor="end" font-family="ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'DejaVu Sans Mono', monospace" font-size="9" letter-spacing="1.2" fill="#727C90">RILEYNIELSEN.COM</text>
+</svg>

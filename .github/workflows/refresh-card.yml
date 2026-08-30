@@ -1,0 +1,57 @@
+name: Refresh profile card
+
+# The card is a committed SVG, so its numbers freeze at commit time. This
+# rewrites them daily so the profile never claims a stale star or search
+# count — the figures are the whole point of the card.
+#
+# It commits ONLY when the rendered SVG actually changes, so quiet days
+# produce no commit noise.
+
+on:
+  schedule:
+    # 06:17 UTC daily. Off the hour on purpose: GitHub drops scheduled runs
+    # at popular times when the queue is busy.
+    - cron: "17 6 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    paths:
+      - "scripts/**"
+      - ".github/workflows/refresh-card.yml"
+
+# Two runs committing to the same branch would race.
+concurrency:
+  group: refresh-card
+  cancel-in-progress: false
+
+jobs:
+  refresh:
+    runs-on: ubuntu-latest
+    permissions:
+      contents: write
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+
+      - name: Generate card
+        env:
+          # Lifts the GitHub API limit from 60/hr unauthenticated to 1000/hr.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: node scripts/generate-card.mjs
+
+      - name: Commit if the numbers changed
+        run: |
+          if git diff --quiet -- assets/; then
+            echo "Numbers unchanged — nothing to commit."
+            exit 0
+          fi
+
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/
+          git commit -m "Refresh profile card stats"
+          git push
