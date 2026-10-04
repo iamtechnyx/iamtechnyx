@@ -22,7 +22,7 @@ const OUT_DIR = path.join(process.cwd(), "assets");
 const TIMEOUT_MS = 10_000;
 
 /* ------------------------------------------------------------------
-   MANUAL — keep in sync with technyx-sh/src/lib/metrics.ts
+   MANUAL — keep in sync with rileynielsen.com/src/lib/metrics.ts
    api.railforless.us/stats exposes rolling windows only, not an
    all-time total. When a cumulative endpoint lands, fetch it here.
    ------------------------------------------------------------------ */
